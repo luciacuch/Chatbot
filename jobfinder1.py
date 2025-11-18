@@ -13,13 +13,13 @@ import datetime
 
 # Configuración de Gemini AI
 # Se recomienda usar variables de entorno para las claves en producción.
-os.environ["API_KEY"] = "AIzaSyAZ4pvgZ8AcKY_QOthvQGcype9vm8URTXg"  
+os.environ["API_KEY"] = ACÁ VA EL CÓDIGO 
 genai.configure(api_key=os.environ["API_KEY"])
 # Inicialización del modelo de IA generativa
 model = genai.GenerativeModel('gemini-2.5-flash') 
 
 # Configuración de Telegram Bot
-TELEGRAM_BOT_TOKEN = '8418827665:AAFzoxRm_gco4kax08rWNeWFufrFNlY4dc0'
+TELEGRAM_BOT_TOKEN = ACÁ VA EL CÓDIGO
 # Inicialización del bot. parse_mode='Markdown' se usa para dar formato 
 # a los mensajes de bienvenida y a los listados de ofertas.
 bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN, parse_mode='Markdown') 
@@ -338,4 +338,5 @@ def run_bot():
 
 if __name__ == "__main__":
     # Asegura que el bot solo se ejecute al iniciar el script directamente.
+
     run_bot()
